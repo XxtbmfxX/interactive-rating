@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --Light_Grey: hsl(217, 12%, 63%);
+  --Medium_Grey: hsl(216, 12%, 54%);
+  --Dark_Blue: hsl(213, 19%, 18%);
+  --Very_Dark_Blue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+  --Span_color: hsl(215deg 19% 18%);
+  --Main_color: hsl(215deg 22% 15%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--Very_Dark_Blue);
+  font-size: 62.5%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Main_start {
+  height: 50px;
+  width: 100%;
+}
+
+.Main_start span {
+  align-self: flex-start;
+  border-radius: 50px;
+  background-color: var(--Span_color);
+  padding: 10px;
+  padding: 20px;
+  padding-block: 15px;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--Main_color);
+  font-size: 1.5rem;
+  color: white;
+  padding: 30px;
+  border-radius: 5%;
+  width: 80%;
+  max-width: 400px;
+  height: 50vh;
+}
+.Main h1 {
+  font-size: 2rem;
+}
+
+.Main p {
+  color: var(--Medium_Grey);
+  font-size: 1rem;
+}
+.Main_rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+}
+
+.Main_rating span {
+  background-color: var(--Span_color);
+  border-radius: 50px;
+  padding: 20px;
+  padding-block: 15px;
+  font-size: 1rem;
+  color: var(--Light_Grey);
+}
+.Main_rating span:hover {
+  background-color: var(--Light_Grey);
+  cursor: pointer;
+  color: white;
+}
+.Main_rating span:active {
+  background-color: var(--Orange);
+  color: white;
+  cursor: pointer;
+}
+
+.Main_button {
+  width: 100%;
+}
+.Main_button button {
+  color: white;
+  background-color: var(--Orange);
+  border: none;
+  width: 100%;
+  letter-spacing: 2px;
+  padding-inline: 50px;
+  padding-block: 15px;
+  border-radius: 20px;
+}
+
+.Main_button button:hover {
+  background-color: var(--Light_Grey);
+  color: var(--Orange);
+  cursor: pointer;
+}
+
+.Main_button button:active {
+  background-color: white;
+  color: var(--Orange);
+  cursor: pointer;
+}
+
+#Main_end {
+  justify-content: space-around;
+  display: none;
+}
+
+.Main_end-span {
+  background-color: var(--Span_color);
+  color: var(--Orange);
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 20px;
+}
+.Main_end-text {
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

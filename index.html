@@ -11,23 +11,15 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Interactive rating component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="Main">
-      <span>*START*</span>
+      <div class="Main_start">
+        <span ><img src="/images/icon-star.svg" alt="" /></span>
+      </div>
       <div class="Main_text">
         <h1>How did we do?</h1>
         <p>
@@ -43,14 +35,16 @@
         <span>5</span>
       </div>
       <div class="Main_button">
-        <button></button>
+        <button>SUBMIT</button>
       </div>
     </div>
     <!-- Rating state start -->
-
-    <div class="Main_end">
-      <div class="Main_end-img"></div>
-      <span>You selected --The selection--</span>
+    
+    <div id="Main_end" class="Main">
+      <div class="Main_end-img">
+        <img src="images/illustration-thank-you.svg" alt="">
+      </div>
+      <span class="Main_end-span" >You selected --The selection--</span>
       <div class="Main_end-text">
         <h1>Thank You!</h1>
         <p>out of 5 Thank you! We appreciate you taking the time to give a rating. If
@@ -58,13 +52,12 @@
       </div>
     </div>
 
-  
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
