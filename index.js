@@ -1,5 +1,4 @@
 const buttons = document.querySelector(".Main_rating").querySelectorAll("span");
-console.log(buttons);
 
 const mainCard = document.querySelector(".Main");
 const mainEnd = document.querySelector("#Main_end");
